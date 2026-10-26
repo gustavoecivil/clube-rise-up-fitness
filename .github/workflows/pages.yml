@@ -25,7 +25,7 @@ jobs:
       - name: Preparar pagina
         run: |
           mkdir -p _site
-          cp index.html .nojekyll _site/
+          cp index.html regulamento.html .nojekyll _site/
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
       - name: Enviar site
