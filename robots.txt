@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://studioriseup.com.br/sitemap.xml
