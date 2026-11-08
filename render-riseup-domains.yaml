@@ -1,0 +1,13 @@
+# GSA / Rise Up Fitness: preserve the existing static site and register its official domain.
+services:
+  - type: web
+    name: gsa-riseup-preview
+    runtime: static
+    repo: https://github.com/gustavoecivil/clube-rise-up-fitness
+    branch: main
+    buildCommand: mkdir -p _render && cp index.html _render/index.html
+    staticPublishPath: ./_render
+    autoDeployTrigger: off
+    renderSubdomainPolicy: enabled
+    domains:
+      - studioriseup.com.br
